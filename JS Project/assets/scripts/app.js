@@ -39,3 +39,11 @@ function greet(username, Message = "hello") {
 
 const greetings = greet("Ayush");
 console.log(greetings);
+
+export default (username, Message) => {
+console.log("hello");
+return username + Message;
+}
+// another way of opening function is using arrow method
+// everything can be done in functions like this
+// functions which do not have a name are created are this
