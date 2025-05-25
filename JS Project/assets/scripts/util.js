@@ -1,5 +1,5 @@
-export let apikey = "egbbvvvzjcjzbxs";
+//export let apikey = "egbbvvvzjcjzbxs";
 
-export default "egbbvvvzjcjzbxs";
+//export default "egbbvvvzjcjzbxs";
 
-export let abc = "ffvvfv";
+//export let abc = "ffvvfv";
