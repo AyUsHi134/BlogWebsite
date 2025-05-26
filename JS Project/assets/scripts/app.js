@@ -66,3 +66,20 @@
 // // since the function belongs to the object it can access other properties of that object 
 // //to access other methods or fields u can use this keyword 
 
+const hobbies = ["sports", "singing", "coding"];
+console.log(hobbies[1]); 
+
+hobbies.push("Working");
+console.log(hobbies);
+
+// const index = hobbies.findIndex ((item) => {
+//     return item === "sports";
+
+const index = hobbies.findIndex ((item) => item === "sports");
+console.log(index);
+
+const editedHobbies = hobbies.map((item) => ({text:item}));
+console.log(editedHobbies);
+
+// items can not only be converted into strings but also into JS objects.
+// object created with curly braces and wrapped around () and then key value-pair is given. 
