@@ -68,7 +68,7 @@ const { use } = require("react");
 // // since the function belongs to the object it can access other properties of that object 
 // //to access other methods or fields u can use this keyword 
 
-// const hobbies = ["sports", "singing", "coding"];
+ 
 // console.log(hobbies[1]); 
 
 // hobbies.push("Working");
@@ -86,17 +86,44 @@ const { use } = require("react");
 // items can not only be converted into strings but also into JS objects.
 // object created with curly braces and wrapped around () and then key value-pair is given. 
 // it returns text:sports 
-
-const [firstname,lastname] = ["Ayushi", "Singh"];
+// destructuring arrays
+// const [firstname,lastname] = ["Ayushi", "Singh"];
 
 // const firstName = userName[0];
 // const lastName = userName[1];
 
-console.log(firstname);
-console.log(lastname);
+// console.log(firstname);
+// console.log(lastname);
 
 // instead of using username[indexno] now can be accessed using firstname and lastname.
 // but also a better way to get the value is to deconstruct the array.
 // the 2 variables can be created in 1 single step by adding [] on left side.
 // on right side they create new array on left side they destructure that array by pulling out the values.
 // firstname pulls Ayushi ,lastname pulls singh
+
+const hobbies = ["sports", "singing", "coding"];
+const user = {
+    name: "Ayushi",
+    age: 24
+};
+
+const newHobbies = ["writing"];
+const mergedHobbies = [...hobbies, ...newHobbies];
+
+const extendedUser = {
+    isAdmin : true,
+    ...user
+};
+console.log(extendedUser);
+
+
+//const mergedHobbies = [hobbies]; // without ... an outer array will be formed which will contain the 1st array all elements , nesting array is done.
+// without ... both arrays will be inside an another array but with ... they will be individual and not nested.
+
+// merging 2 arrays together spread operator is used.
+// spread operator is donated as ...(3 dots).
+// spread operator then 1st array then , then spread operator and 2nd array. 
+// ... pulls all the elements of 1st array and adds them to new list(mergedHobbies) 
+
+// A new object is created which contains a key value-pair and then spread operator is used on another object 
+// which pulls out evey key-value pair in that object and merge them 
