@@ -101,20 +101,20 @@ const { use } = require("react");
 // on right side they create new array on left side they destructure that array by pulling out the values.
 // firstname pulls Ayushi ,lastname pulls singh
 
-const hobbies = ["sports", "singing", "coding"];
-const user = {
-    name: "Ayushi",
-    age: 24
-};
+// const hobbies = ["sports", "singing", "coding"];
+// const user = {
+//     name: "Ayushi",
+//     age: 24
+// };
 
-const newHobbies = ["writing"];
-const mergedHobbies = [...hobbies, ...newHobbies];
+// const newHobbies = ["writing"];
+// const mergedHobbies = [...hobbies, ...newHobbies];
 
-const extendedUser = {
-    isAdmin : true,
-    ...user
-};
-console.log(extendedUser);
+// const extendedUser = {
+//     isAdmin : true,
+//     ...user
+// };
+// console.log(extendedUser);
 
 
 //const mergedHobbies = [hobbies]; // without ... an outer array will be formed which will contain the 1st array all elements , nesting array is done.
@@ -127,3 +127,16 @@ console.log(extendedUser);
 
 // A new object is created which contains a key value-pair and then spread operator is used on another object 
 // which pulls out evey key-value pair in that object and merge them 
+
+const password = prompt("your password");
+if(password === "Hello") {
+    console.log("Hello works");
+} else if (password === "hello") {
+    console.log("hello works");
+} else {
+    console.log('Access not granted');
+}
+//if- else : if is a control structure which compares value to check the following conditions are met and shows op according to that.
+//after if there can be else-if which can be used to check for another conditions. there can be many else-if conditions.
+// in end only one else condition
+// a variable is created which takes the password from user using prompt() and checks which conditions are met accordingly.
