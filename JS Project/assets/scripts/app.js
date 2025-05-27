@@ -128,15 +128,25 @@ const { use } = require("react");
 // A new object is created which contains a key value-pair and then spread operator is used on another object 
 // which pulls out evey key-value pair in that object and merge them 
 
-const password = prompt("your password");
-if(password === "Hello") {
-    console.log("Hello works");
-} else if (password === "hello") {
-    console.log("hello works");
-} else {
-    console.log('Access not granted');
-}
-//if- else : if is a control structure which compares value to check the following conditions are met and shows op according to that.
+// const password = prompt("your password");
+// if(password === "Hello") {
+//     console.log("Hello works");
+// } else if (password === "hello") {
+//     console.log("hello works");
+// } else {
+//     console.log('Access not granted');
+// }
+//if- else : if is a control structure which compares value to check the following conditions are met and shows op according to that. 
 //after if there can be else-if which can be used to check for another conditions. there can be many else-if conditions.
 // in end only one else condition
 // a variable is created which takes the password from user using prompt() and checks which conditions are met accordingly.
+
+const hobbies = ["cooking", "reading"];
+
+for(const hobby of hobbies){
+    console.log(hobby);
+}
+//using for loop through an error
+// array created and want to code for every elment in the array, a const is created which will be recreated everytime the iltration is done.
+// with of keyword a new const is created for every item in array.
+// so the const will be created 2 times buz array contains 2 items 
