@@ -118,24 +118,30 @@ const { use } = require("react");
 //     console.log(hobby);
 // }
 
-function handleTimeOut(){
-    console.log("timed out");
-}
+// function handleTimeOut(){
+//     console.log("timed out");
+// }
 
-const handleTimeOut2 = () => {
-    console.log("timed out 2");
-}
+// const handleTimeOut2 = () => {
+//     console.log("timed out 2");
+// }
 
-setTimeout(handleTimeOut,2000);
-setTimeout(handleTimeOut,3000);
+// setTimeout(handleTimeOut,2000);
+// setTimeout(handleTimeOut,3000);
 
-setTimeout(() => {
-    console.log("more timed out");
-}, 4000);
+// setTimeout(() => {
+//     console.log("more timed out");
+// }, 4000);
 
-function greeter(greetfn){
-    greetfn();
-}
+// function greeter(greetfn){
+//     greetfn();
+// }
 
-greeter(() => console.log("hi"));
+// greeter(() => console.log("hi"));
 
+// const Message = "hello"; 
+
+// const hobbies = ["reading", "singing"]; 
+// hobbies.push("sleeping");
+// console.log(hobbies);
+ 
