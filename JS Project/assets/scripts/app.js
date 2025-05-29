@@ -10,24 +10,22 @@ const { use } = require("react");
 // //console.log(util.apikey); 
 
 // //console.log("Hello world"); 
-// // values can be created directly 
+
 
 // //let userMessage = "Hello World";
-// //values are stored in variables 
-// //variables are data containers which carries value and u can name them as u like
+
 
 // //console.log(userMessage);
 // // these variables can be then used as identifiers to access the value whenever u want.
 
 // //const username = "hello world";
 
-// //another way to create variables is const
-// // const value cannot be reassigned but if using let it can be done.
+
 
 // function greet() {
 //     console.log("Hello world");
 // }
-// //code inside the function does not run directly but instead whne function is called.
+
 
 // greet(); // calling the function 
 // // function can be called as many times as u want 
@@ -46,9 +44,7 @@ const { use } = require("react");
 // console.log("hello");
 // return username + Message;
 // }
-// another way of opening function is using arrow method
-// everything can be done in functions like this
-// functions which do not have a name are created are this
+
 
 
 // const user = {
@@ -61,12 +57,7 @@ const { use } = require("react");
 // };
 
 // console.log(user.name)
-// user.userGreet(); // calling method the same way just using . to access the function as it is the object 
-// // and calling the function as we normally do 
 
-// // objects can also store functions or called methods
-// // since the function belongs to the object it can access other properties of that object 
-// //to access other methods or fields u can use this keyword 
 
  
 // console.log(hobbies[1]); 
@@ -83,10 +74,7 @@ const { use } = require("react");
 // const editedHobbies = hobbies.map((item) => ({text:item}));
 // console.log(editedHobbies);
 
-// items can not only be converted into strings but also into JS objects.
-// object created with curly braces and wrapped around () and then key value-pair is given. 
-// it returns text:sports 
-// destructuring arrays
+
 // const [firstname,lastname] = ["Ayushi", "Singh"];
 
 // const firstName = userName[0];
@@ -95,12 +83,7 @@ const { use } = require("react");
 // console.log(firstname);
 // console.log(lastname);
 
-// instead of using username[indexno] now can be accessed using firstname and lastname.
-// but also a better way to get the value is to deconstruct the array.
-// the 2 variables can be created in 1 single step by adding [] on left side.
-// on right side they create new array on left side they destructure that array by pulling out the values.
-// firstname pulls Ayushi ,lastname pulls singh
-
+ 
 // const hobbies = ["sports", "singing", "coding"];
 // const user = {
 //     name: "Ayushi",
@@ -117,16 +100,7 @@ const { use } = require("react");
 // console.log(extendedUser);
 
 
-//const mergedHobbies = [hobbies]; // without ... an outer array will be formed which will contain the 1st array all elements , nesting array is done.
-// without ... both arrays will be inside an another array but with ... they will be individual and not nested.
 
-// merging 2 arrays together spread operator is used.
-// spread operator is donated as ...(3 dots).
-// spread operator then 1st array then , then spread operator and 2nd array. 
-// ... pulls all the elements of 1st array and adds them to new list(mergedHobbies) 
-
-// A new object is created which contains a key value-pair and then spread operator is used on another object 
-// which pulls out evey key-value pair in that object and merge them 
 
 // const password = prompt("your password");
 // if(password === "Hello") {
@@ -136,17 +110,32 @@ const { use } = require("react");
 // } else {
 //     console.log('Access not granted');
 // }
-//if- else : if is a control structure which compares value to check the following conditions are met and shows op according to that. 
-//after if there can be else-if which can be used to check for another conditions. there can be many else-if conditions.
-// in end only one else condition
-// a variable is created which takes the password from user using prompt() and checks which conditions are met accordingly.
 
-const hobbies = ["cooking", "reading"];
 
-for(const hobby of hobbies){
-    console.log(hobby);
+// const hobbies = ["cooking", "reading"];
+
+// for(const hobby of hobbies){
+//     console.log(hobby);
+// }
+
+function handleTimeOut(){
+    console.log("timed out");
 }
-//using for loop through an error
-// array created and want to code for every elment in the array, a const is created which will be recreated everytime the iltration is done.
-// with of keyword a new const is created for every item in array.
-// so the const will be created 2 times buz array contains 2 items 
+
+const handleTimeOut2 = () => {
+    console.log("timed out 2");
+}
+
+setTimeout(handleTimeOut,2000);
+setTimeout(handleTimeOut,3000);
+
+setTimeout(() => {
+    console.log("more timed out");
+}, 4000);
+
+function greeter(greetfn){
+    greetfn();
+}
+
+greeter(() => console.log("hi"));
+
